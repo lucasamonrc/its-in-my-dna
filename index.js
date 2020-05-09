@@ -8,10 +8,10 @@ const PORT = process.env.PORT || 3333;
 const app = express();
 const HTML = path.join(__dirname, "/views/index.html");
 
-app.use(cors());
 app.use(express.json());
-app.use(routes);
+app.use(cors());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(routes);
 
 app.get('/', (req, res) => res.sendFile(HTML));
 

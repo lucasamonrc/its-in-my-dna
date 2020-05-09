@@ -4,4 +4,4 @@ const routes = express.Router();
 
 routes.get("/records", RecordController.index);
 
-module.exports(routes);
+module.exports = routes;
