@@ -1,4 +1,4 @@
-const db = require("../database/db");
+const db = require("../database/connection");
 const queries = require("../database/queries");
 
 module.exports = {
