@@ -12,7 +12,7 @@ app.use(express.json());
 //app.use(routes);
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.get('/', (req, res) => res.send('./views/index.html'));
+app.get('/', (req, res) => res.sendFile('./views/index.html'));
 
 
 app.listen(PORT, () => `Server listening on ${PORT}`);
