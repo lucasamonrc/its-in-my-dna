@@ -1,0 +1,24 @@
+{
+  "name": "its-in-my-dna",
+  "version": "1.0.0",
+  "description": "An application to find DNA matches",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasamonrc/its-in-my-dna.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasamonrc/its-in-my-dna/issues"
+  },
+  "homepage": "https://github.com/lucasamonrc/its-in-my-dna#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.1.0"
+  }
+}
