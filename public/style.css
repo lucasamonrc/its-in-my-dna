@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+*, *:focus {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Nunito, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  height: 100%;
+  background: #540085;
+}
+
+.container {
+  width: 80%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.container h1 {
+  color: #fff;
+  font-weight: 700;
+  margin: 2rem 0 1rem;
+}
+
+.container p {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.box {
+  background: #fff;
+  margin: 1.5rem auto 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-control {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-self: center;
+}
+
+.form-control input {
+  padding: .3rem 0 .2rem;
+  margin-bottom: 1rem;
+  width: 30%;
+  border: none;
+  border-bottom: 1px solid #540085;
+  font-size: .75rem;
+  transition: all .5s;
+}
+
+.form-control button {
+  width: 95%;
+  padding: .5rem;
+  border: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-radius: 5px;
+  background: #540085;
+  transition: filter .5s;
+  cursor: pointer;
+}
+
+.form-control button:hover {
+  filter: brightness(1.75);
+}
+
+.form-control button:active {
+  transform: scale(.99);
+}
+
+.box p {
+  color: black;
+  font-weight: 700;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.box hr {
+  margin-bottom: .5rem;
+}
+
+.recordsTable {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.recordsTable th {
+  font-size: .9rem;
+  width: 20%;
+}
+
+.records td {
+  font-size: .9rem;
+  width: 20%;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+}
+
+footer p {
+  text-align: center;
+  font-size: .8rem;
+  color: white;
+}
+
+footer p > a {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: filter .5s;
+}
+
+footer p > a:hover {
+  filter: opacity(.75)
+}

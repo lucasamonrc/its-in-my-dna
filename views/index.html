@@ -1,1 +1,64 @@
-<h1>HELLO WORLD</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../public/style.css">
+  <title>It's in My DNA</title>
+</head>
+
+<body>
+  <header class="container">
+    <h1>It's in My DNA</h1>
+    <p>Enter your name and your 10-characters DNA sequencing to find people that matches your dna.</p>
+  </header>
+
+  <main>
+    <section class="container box" id="inputFields" action="" onsubmit="handleForm" method="post">
+      <form class="form-control" id="form" onsubmit="handleForm()">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+
+        <input type="text" name="dnaSequence" id="dnaSequence" placeholder="DNA Sequence" required>
+
+        <button type="submit">Find</button>
+      </form>
+    </section>
+
+    <section class="container box hidden" id="recordsOutput">
+      <p>Results</p>
+      <hr>
+      <table class="recordsTable">
+        <thead>
+          <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>DNA Sequence</th>
+            <th>% Match</th>
+          </tr>
+        </thead>
+        <tbody class="records">
+          <!--<tr>
+            <td>Lucas</td>
+            <td>Castro</td>
+            <td>ACGTACGTAC</td>
+            <td>100%</td>
+          </tr>-->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Visit the GitHub repo <a href="#">GitHub</a><br>
+      Developed by Lucas Castro
+    </p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"></script>
+  <script src="../public/script.js"></script>
+</body>
+
+</html>
